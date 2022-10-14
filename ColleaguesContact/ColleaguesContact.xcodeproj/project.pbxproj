@@ -29,6 +29,9 @@
 		3FBAFB5828FA191F00A2449B /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB5528FA191F00A2449B /* ContactRepository.swift */; };
 		3FBAFB5928FA191F00A2449B /* ContactQueriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB5628FA191F00A2449B /* ContactQueriesRepository.swift */; };
 		3FBAFB5A28FA191F00A2449B /* PosterImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB5728FA191F00A2449B /* PosterImagesRepository.swift */; };
+		3FBAFB5E28FA197D00A2449B /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB5D28FA197D00A2449B /* UseCase.swift */; };
+		3FBAFB6128FA198900A2449B /* SearchContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB5F28FA198900A2449B /* SearchContactUseCase.swift */; };
+		3FBAFB6228FA198900A2449B /* FetchRecentContactQueriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6028FA198900A2449B /* FetchRecentContactQueriesUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		3FBAFB5528FA191F00A2449B /* ContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRepository.swift; sourceTree = "<group>"; };
 		3FBAFB5628FA191F00A2449B /* ContactQueriesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactQueriesRepository.swift; sourceTree = "<group>"; };
 		3FBAFB5728FA191F00A2449B /* PosterImagesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PosterImagesRepository.swift; sourceTree = "<group>"; };
+		3FBAFB5D28FA197D00A2449B /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		3FBAFB5F28FA198900A2449B /* SearchContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchContactUseCase.swift; sourceTree = "<group>"; };
+		3FBAFB6028FA198900A2449B /* FetchRecentContactQueriesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchRecentContactQueriesUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +213,7 @@
 		3FBAFB5228FA190100A2449B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3FBAFB5B28FA196700A2449B /* UseCases */,
 				3FBAFB5328FA190B00A2449B /* Interfaces */,
 			);
 			path = Domain;
@@ -228,6 +235,24 @@
 				3FBAFB5728FA191F00A2449B /* PosterImagesRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3FBAFB5B28FA196700A2449B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB6028FA198900A2449B /* FetchRecentContactQueriesUseCase.swift */,
+				3FBAFB5F28FA198900A2449B /* SearchContactUseCase.swift */,
+				3FBAFB5C28FA196B00A2449B /* Protocol */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3FBAFB5C28FA196B00A2449B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB5D28FA197D00A2449B /* UseCase.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,10 +389,13 @@
 				3FBAFB4228FA17FC00A2449B /* AppDIContainer.swift in Sources */,
 				3FBAFB4F28FA18B100A2449B /* NetworkConfig.swift in Sources */,
 				3FBAFB3B28FA178400A2449B /* AppAppearance.swift in Sources */,
+				3FBAFB6228FA198900A2449B /* FetchRecentContactQueriesUseCase.swift in Sources */,
 				3FBAFB5928FA191F00A2449B /* ContactQueriesRepository.swift in Sources */,
+				3FBAFB6128FA198900A2449B /* SearchContactUseCase.swift in Sources */,
 				3FBAFB5128FA18B100A2449B /* Endpoint.swift in Sources */,
 				3FBAFB4628FA186200A2449B /* ConnectionError.swift in Sources */,
 				3FBAFB0828FA15D700A2449B /* AppDelegate.swift in Sources */,
+				3FBAFB5E28FA197D00A2449B /* UseCase.swift in Sources */,
 				3FBAFB4E28FA18B100A2449B /* DataTransferService.swift in Sources */,
 				3FBAFB3D28FA178400A2449B /* AppFlowCoordinator.swift in Sources */,
 				3FBAFB3C28FA178400A2449B /* AppConfigurations.swift in Sources */,
