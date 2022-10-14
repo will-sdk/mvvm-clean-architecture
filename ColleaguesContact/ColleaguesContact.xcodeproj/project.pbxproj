@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		3FBAFB0828FA15D700A2449B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB0728FA15D700A2449B /* AppDelegate.swift */; };
 		3FBAFB0A28FA15D700A2449B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB0928FA15D700A2449B /* SceneDelegate.swift */; };
-		3FBAFB0C28FA15D700A2449B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB0B28FA15D700A2449B /* ViewController.swift */; };
 		3FBAFB0F28FA15D700A2449B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBAFB0D28FA15D700A2449B /* Main.storyboard */; };
 		3FBAFB1128FA15D900A2449B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBAFB1028FA15D900A2449B /* Assets.xcassets */; };
 		3FBAFB1428FA15D900A2449B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBAFB1228FA15D900A2449B /* LaunchScreen.storyboard */; };
 		3FBAFB1F28FA15D900A2449B /* ColleaguesContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB1E28FA15D900A2449B /* ColleaguesContactTests.swift */; };
 		3FBAFB2928FA15D900A2449B /* ColleaguesContactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB2828FA15D900A2449B /* ColleaguesContactUITests.swift */; };
 		3FBAFB2B28FA15D900A2449B /* ColleaguesContactUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB2A28FA15D900A2449B /* ColleaguesContactUITestsLaunchTests.swift */; };
+		3FBAFB3B28FA178400A2449B /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB3828FA178400A2449B /* AppAppearance.swift */; };
+		3FBAFB3C28FA178400A2449B /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB3928FA178400A2449B /* AppConfigurations.swift */; };
+		3FBAFB3D28FA178400A2449B /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB3A28FA178400A2449B /* AppFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		3FBAFB0428FA15D700A2449B /* ColleaguesContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColleaguesContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBAFB0728FA15D700A2449B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBAFB0928FA15D700A2449B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3FBAFB0B28FA15D700A2449B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FBAFB0E28FA15D700A2449B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FBAFB1028FA15D900A2449B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBAFB1328FA15D900A2449B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		3FBAFB2428FA15D900A2449B /* ColleaguesContactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColleaguesContactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBAFB2828FA15D900A2449B /* ColleaguesContactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColleaguesContactUITests.swift; sourceTree = "<group>"; };
 		3FBAFB2A28FA15D900A2449B /* ColleaguesContactUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColleaguesContactUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FBAFB3828FA178400A2449B /* AppAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		3FBAFB3928FA178400A2449B /* AppConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
+		3FBAFB3A28FA178400A2449B /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,7 @@
 		3FBAFB0628FA15D700A2449B /* ColleaguesContact */ = {
 			isa = PBXGroup;
 			children = (
-				3FBAFB0728FA15D700A2449B /* AppDelegate.swift */,
-				3FBAFB0928FA15D700A2449B /* SceneDelegate.swift */,
-				3FBAFB0B28FA15D700A2449B /* ViewController.swift */,
+				3FBAFB3728FA173700A2449B /* Application */,
 				3FBAFB0D28FA15D700A2449B /* Main.storyboard */,
 				3FBAFB1028FA15D900A2449B /* Assets.xcassets */,
 				3FBAFB1228FA15D900A2449B /* LaunchScreen.storyboard */,
@@ -125,6 +127,18 @@
 				3FBAFB2A28FA15D900A2449B /* ColleaguesContactUITestsLaunchTests.swift */,
 			);
 			path = ColleaguesContactUITests;
+			sourceTree = "<group>";
+		};
+		3FBAFB3728FA173700A2449B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB0728FA15D700A2449B /* AppDelegate.swift */,
+				3FBAFB0928FA15D700A2449B /* SceneDelegate.swift */,
+				3FBAFB3828FA178400A2449B /* AppAppearance.swift */,
+				3FBAFB3928FA178400A2449B /* AppConfigurations.swift */,
+				3FBAFB3A28FA178400A2449B /* AppFlowCoordinator.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FBAFB0C28FA15D700A2449B /* ViewController.swift in Sources */,
+				3FBAFB3B28FA178400A2449B /* AppAppearance.swift in Sources */,
 				3FBAFB0828FA15D700A2449B /* AppDelegate.swift in Sources */,
+				3FBAFB3D28FA178400A2449B /* AppFlowCoordinator.swift in Sources */,
+				3FBAFB3C28FA178400A2449B /* AppConfigurations.swift in Sources */,
 				3FBAFB0A28FA15D700A2449B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
