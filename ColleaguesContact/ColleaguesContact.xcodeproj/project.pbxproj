@@ -20,6 +20,8 @@
 		3FBAFB3D28FA178400A2449B /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB3A28FA178400A2449B /* AppFlowCoordinator.swift */; };
 		3FBAFB4128FA17FC00A2449B /* ContactSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB3F28FA17FC00A2449B /* ContactSceneDIContainer.swift */; };
 		3FBAFB4228FA17FC00A2449B /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4028FA17FC00A2449B /* AppDIContainer.swift */; };
+		3FBAFB4628FA186200A2449B /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4428FA186200A2449B /* ConnectionError.swift */; };
+		3FBAFB4728FA186200A2449B /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4528FA186200A2449B /* Cancelable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		3FBAFB3A28FA178400A2449B /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
 		3FBAFB3F28FA17FC00A2449B /* ContactSceneDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactSceneDIContainer.swift; sourceTree = "<group>"; };
 		3FBAFB4028FA17FC00A2449B /* AppDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		3FBAFB4428FA186200A2449B /* ConnectionError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
+		3FBAFB4528FA186200A2449B /* Cancelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		3FBAFB0628FA15D700A2449B /* ColleaguesContact */ = {
 			isa = PBXGroup;
 			children = (
+				3FBAFB4328FA185600A2449B /* Common */,
 				3FBAFB3728FA173700A2449B /* Application */,
 				3FBAFB0D28FA15D700A2449B /* Main.storyboard */,
 				3FBAFB1028FA15D900A2449B /* Assets.xcassets */,
@@ -153,6 +158,15 @@
 				3FBAFB3F28FA17FC00A2449B /* ContactSceneDIContainer.swift */,
 			);
 			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		3FBAFB4328FA185600A2449B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB4528FA186200A2449B /* Cancelable.swift */,
+				3FBAFB4428FA186200A2449B /* ConnectionError.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,10 +302,12 @@
 			files = (
 				3FBAFB4228FA17FC00A2449B /* AppDIContainer.swift in Sources */,
 				3FBAFB3B28FA178400A2449B /* AppAppearance.swift in Sources */,
+				3FBAFB4628FA186200A2449B /* ConnectionError.swift in Sources */,
 				3FBAFB0828FA15D700A2449B /* AppDelegate.swift in Sources */,
 				3FBAFB3D28FA178400A2449B /* AppFlowCoordinator.swift in Sources */,
 				3FBAFB3C28FA178400A2449B /* AppConfigurations.swift in Sources */,
 				3FBAFB4128FA17FC00A2449B /* ContactSceneDIContainer.swift in Sources */,
+				3FBAFB4728FA186200A2449B /* Cancelable.swift in Sources */,
 				3FBAFB0A28FA15D700A2449B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
