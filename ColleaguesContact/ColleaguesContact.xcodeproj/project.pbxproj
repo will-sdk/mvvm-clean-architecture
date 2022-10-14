@@ -18,6 +18,8 @@
 		3FBAFB3B28FA178400A2449B /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB3828FA178400A2449B /* AppAppearance.swift */; };
 		3FBAFB3C28FA178400A2449B /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB3928FA178400A2449B /* AppConfigurations.swift */; };
 		3FBAFB3D28FA178400A2449B /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB3A28FA178400A2449B /* AppFlowCoordinator.swift */; };
+		3FBAFB4128FA17FC00A2449B /* ContactSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB3F28FA17FC00A2449B /* ContactSceneDIContainer.swift */; };
+		3FBAFB4228FA17FC00A2449B /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4028FA17FC00A2449B /* AppDIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		3FBAFB3828FA178400A2449B /* AppAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
 		3FBAFB3928FA178400A2449B /* AppConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
 		3FBAFB3A28FA178400A2449B /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		3FBAFB3F28FA17FC00A2449B /* ContactSceneDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactSceneDIContainer.swift; sourceTree = "<group>"; };
+		3FBAFB4028FA17FC00A2449B /* AppDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		3FBAFB3728FA173700A2449B /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				3FBAFB3E28FA17F100A2449B /* DIContainer */,
 				3FBAFB0728FA15D700A2449B /* AppDelegate.swift */,
 				3FBAFB0928FA15D700A2449B /* SceneDelegate.swift */,
 				3FBAFB3828FA178400A2449B /* AppAppearance.swift */,
@@ -139,6 +144,15 @@
 				3FBAFB3A28FA178400A2449B /* AppFlowCoordinator.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		3FBAFB3E28FA17F100A2449B /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB4028FA17FC00A2449B /* AppDIContainer.swift */,
+				3FBAFB3F28FA17FC00A2449B /* ContactSceneDIContainer.swift */,
+			);
+			path = DIContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,10 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBAFB4228FA17FC00A2449B /* AppDIContainer.swift in Sources */,
 				3FBAFB3B28FA178400A2449B /* AppAppearance.swift in Sources */,
 				3FBAFB0828FA15D700A2449B /* AppDelegate.swift in Sources */,
 				3FBAFB3D28FA178400A2449B /* AppFlowCoordinator.swift in Sources */,
 				3FBAFB3C28FA178400A2449B /* AppConfigurations.swift in Sources */,
+				3FBAFB4128FA17FC00A2449B /* ContactSceneDIContainer.swift in Sources */,
 				3FBAFB0A28FA15D700A2449B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
