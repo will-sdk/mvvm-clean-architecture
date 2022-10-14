@@ -32,6 +32,8 @@
 		3FBAFB5E28FA197D00A2449B /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB5D28FA197D00A2449B /* UseCase.swift */; };
 		3FBAFB6128FA198900A2449B /* SearchContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB5F28FA198900A2449B /* SearchContactUseCase.swift */; };
 		3FBAFB6228FA198900A2449B /* FetchRecentContactQueriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6028FA198900A2449B /* FetchRecentContactQueriesUseCase.swift */; };
+		3FBAFB6628FA19EB00A2449B /* ContactQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6428FA19EB00A2449B /* ContactQuery.swift */; };
+		3FBAFB6728FA19EB00A2449B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6528FA19EB00A2449B /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		3FBAFB5D28FA197D00A2449B /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		3FBAFB5F28FA198900A2449B /* SearchContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchContactUseCase.swift; sourceTree = "<group>"; };
 		3FBAFB6028FA198900A2449B /* FetchRecentContactQueriesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchRecentContactQueriesUseCase.swift; sourceTree = "<group>"; };
+		3FBAFB6428FA19EB00A2449B /* ContactQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactQuery.swift; sourceTree = "<group>"; };
+		3FBAFB6528FA19EB00A2449B /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +217,7 @@
 		3FBAFB5228FA190100A2449B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3FBAFB6328FA19E300A2449B /* Entities */,
 				3FBAFB5B28FA196700A2449B /* UseCases */,
 				3FBAFB5328FA190B00A2449B /* Interfaces */,
 			);
@@ -253,6 +258,15 @@
 				3FBAFB5D28FA197D00A2449B /* UseCase.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3FBAFB6328FA19E300A2449B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB6528FA19EB00A2449B /* Contact.swift */,
+				3FBAFB6428FA19EB00A2449B /* ContactQuery.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,7 +406,9 @@
 				3FBAFB6228FA198900A2449B /* FetchRecentContactQueriesUseCase.swift in Sources */,
 				3FBAFB5928FA191F00A2449B /* ContactQueriesRepository.swift in Sources */,
 				3FBAFB6128FA198900A2449B /* SearchContactUseCase.swift in Sources */,
+				3FBAFB6728FA19EB00A2449B /* Contact.swift in Sources */,
 				3FBAFB5128FA18B100A2449B /* Endpoint.swift in Sources */,
+				3FBAFB6628FA19EB00A2449B /* ContactQuery.swift in Sources */,
 				3FBAFB4628FA186200A2449B /* ConnectionError.swift in Sources */,
 				3FBAFB0828FA15D700A2449B /* AppDelegate.swift in Sources */,
 				3FBAFB5E28FA197D00A2449B /* UseCase.swift in Sources */,
