@@ -85,6 +85,7 @@
 		3FBAFBEE28FAEC2700A2449B /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBED28FAEC2700A2449B /* NetworkServiceTests.swift */; };
 		3FBAFBF028FAEC3800A2449B /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBEF28FAEC3800A2449B /* DataTransferServiceTests.swift */; };
 		3FBAFBF328FAEC6200A2449B /* Contact+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBF228FAEC6200A2449B /* Contact+Stub.swift */; };
+		3FBAFBF428FAED5700A2449B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6528FA19EB00A2449B /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -925,6 +926,7 @@
 				3FBAFBF028FAEC3800A2449B /* DataTransferServiceTests.swift in Sources */,
 				3FBAFBEE28FAEC2700A2449B /* NetworkServiceTests.swift in Sources */,
 				3FBAFBE528FAEBD500A2449B /* ContactDetailsViewModelTests.swift in Sources */,
+				3FBAFBF428FAED5700A2449B /* Contact.swift in Sources */,
 				3FBAFBE328FAEBC300A2449B /* ContactListViewModelTests.swift in Sources */,
 				3FBAFB1F28FA15D900A2449B /* ColleaguesContactTests.swift in Sources */,
 				3FBAFBE128FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift in Sources */,
