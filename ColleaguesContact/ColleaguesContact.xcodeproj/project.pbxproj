@@ -86,6 +86,10 @@
 		3FBAFBF028FAEC3800A2449B /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBEF28FAEC3800A2449B /* DataTransferServiceTests.swift */; };
 		3FBAFBF328FAEC6200A2449B /* Contact+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBF228FAEC6200A2449B /* Contact+Stub.swift */; };
 		3FBAFBF428FAED5700A2449B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6528FA19EB00A2449B /* Contact.swift */; };
+		3FBAFBF528FAEEFD00A2449B /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4A28FA18B100A2449B /* DataTransferService.swift */; };
+		3FBAFBF628FAEEFF00A2449B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4D28FA18B100A2449B /* Endpoint.swift */; };
+		3FBAFBF728FAEF0100A2449B /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4B28FA18B100A2449B /* NetworkConfig.swift */; };
+		3FBAFBF828FAEF0300A2449B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4C28FA18B100A2449B /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -920,13 +924,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBAFBF728FAEF0100A2449B /* NetworkConfig.swift in Sources */,
+				3FBAFBF528FAEEFD00A2449B /* DataTransferService.swift in Sources */,
 				3FBAFBF328FAEC6200A2449B /* Contact+Stub.swift in Sources */,
 				3FBAFBEC28FAEC1200A2449B /* NetworkConfigurableMock.swift in Sources */,
+				3FBAFBF628FAEEFF00A2449B /* Endpoint.swift in Sources */,
 				3FBAFBDC28FAEA4200A2449B /* SearchContactUseCaseTests.swift in Sources */,
 				3FBAFBF028FAEC3800A2449B /* DataTransferServiceTests.swift in Sources */,
 				3FBAFBEE28FAEC2700A2449B /* NetworkServiceTests.swift in Sources */,
 				3FBAFBE528FAEBD500A2449B /* ContactDetailsViewModelTests.swift in Sources */,
 				3FBAFBF428FAED5700A2449B /* Contact.swift in Sources */,
+				3FBAFBF828FAEF0300A2449B /* NetworkService.swift in Sources */,
 				3FBAFBE328FAEBC300A2449B /* ContactListViewModelTests.swift in Sources */,
 				3FBAFB1F28FA15D900A2449B /* ColleaguesContactTests.swift in Sources */,
 				3FBAFBE128FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift in Sources */,
