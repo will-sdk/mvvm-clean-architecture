@@ -40,6 +40,7 @@ protocol ContactListViewModelOutput {
     var emptyDataTitle: String { get }
     var errorTitle: String { get }
     var searchBarPlaceholder: String { get }
+    var searchTitle: String { get }
 }
 
 protocol ContactListViewModel: ContactListViewModelInput, ContactListViewModelOutput { }
@@ -62,6 +63,7 @@ final class DefaultContactListViewModel: ContactListViewModel {
     let emptyDataTitle = "Empty Data!!"
     let errorTitle = "Error"
     let searchBarPlaceholder = "Search"
+    var  searchTitle = ""
     
     // MARK: - Init
 
@@ -77,6 +79,7 @@ final class DefaultContactListViewModel: ContactListViewModel {
         loading.value = .empty
         self.loading.value = .loading
         query.value = contactQuery.query
+        searchTitle = contactQuery.query
         
         contactLoadTask = searchContactUseCase.execute(
             requestValue: .init(query: contactQuery),

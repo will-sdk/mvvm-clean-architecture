@@ -12,7 +12,6 @@
 		3FBAFB0F28FA15D700A2449B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBAFB0D28FA15D700A2449B /* Main.storyboard */; };
 		3FBAFB1128FA15D900A2449B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBAFB1028FA15D900A2449B /* Assets.xcassets */; };
 		3FBAFB1428FA15D900A2449B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBAFB1228FA15D900A2449B /* LaunchScreen.storyboard */; };
-		3FBAFB1F28FA15D900A2449B /* ColleaguesContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB1E28FA15D900A2449B /* ColleaguesContactTests.swift */; };
 		3FBAFB2928FA15D900A2449B /* ColleaguesContactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB2828FA15D900A2449B /* ColleaguesContactUITests.swift */; };
 		3FBAFB2B28FA15D900A2449B /* ColleaguesContactUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB2A28FA15D900A2449B /* ColleaguesContactUITestsLaunchTests.swift */; };
 		3FBAFB3B28FA178400A2449B /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB3828FA178400A2449B /* AppAppearance.swift */; };
@@ -76,6 +75,34 @@
 		3FBAFBD628FAE77200A2449B /* BlackStyleNavigationBarBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBB928FAE77200A2449B /* BlackStyleNavigationBarBehavior.swift */; };
 		3FBAFBD728FAE77200A2449B /* BackButtonEmptyTitleNavigationBarBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBBA28FAE77200A2449B /* BackButtonEmptyTitleNavigationBarBehavior.swift */; };
 		3FBAFBD828FAE77200A2449B /* ContactSearchFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBBC28FAE77200A2449B /* ContactSearchFlowCoordinator.swift */; };
+		3FBAFBDC28FAEA4200A2449B /* SearchContactUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBDB28FAEA4200A2449B /* SearchContactUseCaseTests.swift */; };
+		3FBAFBE128FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBE028FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift */; };
+		3FBAFBE328FAEBC300A2449B /* ContactListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBE228FAEBC300A2449B /* ContactListViewModelTests.swift */; };
+		3FBAFBE528FAEBD500A2449B /* ContactDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBE428FAEBD500A2449B /* ContactDetailsViewModelTests.swift */; };
+		3FBAFBEB28FAEC1200A2449B /* NetworkSessionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBE928FAEC1200A2449B /* NetworkSessionManagerMock.swift */; };
+		3FBAFBEC28FAEC1200A2449B /* NetworkConfigurableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBEA28FAEC1200A2449B /* NetworkConfigurableMock.swift */; };
+		3FBAFBEE28FAEC2700A2449B /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBED28FAEC2700A2449B /* NetworkServiceTests.swift */; };
+		3FBAFBF028FAEC3800A2449B /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBEF28FAEC3800A2449B /* DataTransferServiceTests.swift */; };
+		3FBAFBF328FAEC6200A2449B /* Contact+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBF228FAEC6200A2449B /* Contact+Stub.swift */; };
+		3FBAFBF428FAED5700A2449B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6528FA19EB00A2449B /* Contact.swift */; };
+		3FBAFBF528FAEEFD00A2449B /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4A28FA18B100A2449B /* DataTransferService.swift */; };
+		3FBAFBF628FAEEFF00A2449B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4D28FA18B100A2449B /* Endpoint.swift */; };
+		3FBAFBF728FAEF0100A2449B /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4B28FA18B100A2449B /* NetworkConfig.swift */; };
+		3FBAFBF828FAEF0300A2449B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4C28FA18B100A2449B /* NetworkService.swift */; };
+		3FBAFBF928FAF2A100A2449B /* ContactQueriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB5628FA191F00A2449B /* ContactQueriesRepository.swift */; };
+		3FBAFBFA28FAF2AA00A2449B /* ContactQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6428FA19EB00A2449B /* ContactQuery.swift */; };
+		3FBAFBFB28FAF2B600A2449B /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB5528FA191F00A2449B /* ContactRepository.swift */; };
+		3FBAFBFC28FAF2BE00A2449B /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4528FA186200A2449B /* Cancelable.swift */; };
+		3FBAFBFD28FAF30400A2449B /* SearchContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB5F28FA198900A2449B /* SearchContactUseCase.swift */; };
+		3FBAFBFE28FAF6FB00A2449B /* ContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBA928FAE77200A2449B /* ContactDetailsViewModel.swift */; };
+		3FBAFC0028FAFC6300A2449B /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBAF28FAE77200A2449B /* ContactListViewModel.swift */; };
+		3FBAFC0128FAFD0C00A2449B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB9828FAE77200A2449B /* Observable.swift */; };
+		3FBAFC0228FAFD1F00A2449B /* ContactListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBB028FAE77200A2449B /* ContactListItemViewModel.swift */; };
+		3FBAFC0328FAFD3900A2449B /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB4428FA186200A2449B /* ConnectionError.swift */; };
+		3FBAFC0428FAFEE200A2449B /* ContactQueriesListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBA028FAE77200A2449B /* ContactQueriesListItemViewModel.swift */; };
+		3FBAFC0528FAFF4A00A2449B /* ContactQueriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBA128FAE77200A2449B /* ContactQueriesListViewModel.swift */; };
+		3FBAFC0628FAFFA100A2449B /* FetchRecentContactQueriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6028FA198900A2449B /* FetchRecentContactQueriesUseCase.swift */; };
+		3FBAFC0728FAFFA900A2449B /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB5D28FA197D00A2449B /* UseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,7 +131,6 @@
 		3FBAFB1328FA15D900A2449B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FBAFB1528FA15D900A2449B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBAFB1A28FA15D900A2449B /* ColleaguesContactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColleaguesContactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FBAFB1E28FA15D900A2449B /* ColleaguesContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColleaguesContactTests.swift; sourceTree = "<group>"; };
 		3FBAFB2428FA15D900A2449B /* ColleaguesContactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColleaguesContactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBAFB2828FA15D900A2449B /* ColleaguesContactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColleaguesContactUITests.swift; sourceTree = "<group>"; };
 		3FBAFB2A28FA15D900A2449B /* ColleaguesContactUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColleaguesContactUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -169,6 +195,15 @@
 		3FBAFBB928FAE77200A2449B /* BlackStyleNavigationBarBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackStyleNavigationBarBehavior.swift; sourceTree = "<group>"; };
 		3FBAFBBA28FAE77200A2449B /* BackButtonEmptyTitleNavigationBarBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonEmptyTitleNavigationBarBehavior.swift; sourceTree = "<group>"; };
 		3FBAFBBC28FAE77200A2449B /* ContactSearchFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactSearchFlowCoordinator.swift; sourceTree = "<group>"; };
+		3FBAFBDB28FAEA4200A2449B /* SearchContactUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContactUseCaseTests.swift; sourceTree = "<group>"; };
+		3FBAFBE028FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactQueriesListViewModelTests.swift; sourceTree = "<group>"; };
+		3FBAFBE228FAEBC300A2449B /* ContactListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModelTests.swift; sourceTree = "<group>"; };
+		3FBAFBE428FAEBD500A2449B /* ContactDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		3FBAFBE928FAEC1200A2449B /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
+		3FBAFBEA28FAEC1200A2449B /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
+		3FBAFBED28FAEC2700A2449B /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		3FBAFBEF28FAEC3800A2449B /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
+		3FBAFBF228FAEC6200A2449B /* Contact+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+Stub.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +271,10 @@
 		3FBAFB1D28FA15D900A2449B /* ColleaguesContactTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FBAFB1E28FA15D900A2449B /* ColleaguesContactTests.swift */,
+				3FBAFBF128FAEC4000A2449B /* Mocks */,
+				3FBAFBE628FAEBED00A2449B /* Infrastructure */,
+				3FBAFBD928FAEA0F00A2449B /* Domain */,
+				3FBAFBDD28FAEA5800A2449B /* Presentation */,
 			);
 			path = ColleaguesContactTests;
 			sourceTree = "<group>";
@@ -619,6 +657,83 @@
 			path = Flows;
 			sourceTree = "<group>";
 		};
+		3FBAFBD928FAEA0F00A2449B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBDA28FAEA1700A2449B /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3FBAFBDA28FAEA1700A2449B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBDB28FAEA4200A2449B /* SearchContactUseCaseTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3FBAFBDD28FAEA5800A2449B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBDE28FAEB7E00A2449B /* ContactScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3FBAFBDE28FAEB7E00A2449B /* ContactScene */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBDF28FAEB8700A2449B /* Mocks */,
+			);
+			path = ContactScene;
+			sourceTree = "<group>";
+		};
+		3FBAFBDF28FAEB8700A2449B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBE028FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift */,
+				3FBAFBE228FAEBC300A2449B /* ContactListViewModelTests.swift */,
+				3FBAFBE428FAEBD500A2449B /* ContactDetailsViewModelTests.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3FBAFBE628FAEBED00A2449B /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBE728FAEBF600A2449B /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3FBAFBE728FAEBF600A2449B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBE828FAEBFD00A2449B /* Mocks */,
+				3FBAFBED28FAEC2700A2449B /* NetworkServiceTests.swift */,
+				3FBAFBEF28FAEC3800A2449B /* DataTransferServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3FBAFBE828FAEBFD00A2449B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBEA28FAEC1200A2449B /* NetworkConfigurableMock.swift */,
+				3FBAFBE928FAEC1200A2449B /* NetworkSessionManagerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3FBAFBF128FAEC4000A2449B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBF228FAEC6200A2449B /* Contact+Stub.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -820,7 +935,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FBAFB1F28FA15D900A2449B /* ColleaguesContactTests.swift in Sources */,
+				3FBAFC0128FAFD0C00A2449B /* Observable.swift in Sources */,
+				3FBAFBFD28FAF30400A2449B /* SearchContactUseCase.swift in Sources */,
+				3FBAFBF728FAEF0100A2449B /* NetworkConfig.swift in Sources */,
+				3FBAFC0628FAFFA100A2449B /* FetchRecentContactQueriesUseCase.swift in Sources */,
+				3FBAFBF528FAEEFD00A2449B /* DataTransferService.swift in Sources */,
+				3FBAFBF328FAEC6200A2449B /* Contact+Stub.swift in Sources */,
+				3FBAFBF928FAF2A100A2449B /* ContactQueriesRepository.swift in Sources */,
+				3FBAFBEC28FAEC1200A2449B /* NetworkConfigurableMock.swift in Sources */,
+				3FBAFBF628FAEEFF00A2449B /* Endpoint.swift in Sources */,
+				3FBAFBDC28FAEA4200A2449B /* SearchContactUseCaseTests.swift in Sources */,
+				3FBAFBFC28FAF2BE00A2449B /* Cancelable.swift in Sources */,
+				3FBAFBF028FAEC3800A2449B /* DataTransferServiceTests.swift in Sources */,
+				3FBAFBEE28FAEC2700A2449B /* NetworkServiceTests.swift in Sources */,
+				3FBAFBFB28FAF2B600A2449B /* ContactRepository.swift in Sources */,
+				3FBAFC0028FAFC6300A2449B /* ContactListViewModel.swift in Sources */,
+				3FBAFBE528FAEBD500A2449B /* ContactDetailsViewModelTests.swift in Sources */,
+				3FBAFBF428FAED5700A2449B /* Contact.swift in Sources */,
+				3FBAFBFE28FAF6FB00A2449B /* ContactDetailsViewModel.swift in Sources */,
+				3FBAFC0228FAFD1F00A2449B /* ContactListItemViewModel.swift in Sources */,
+				3FBAFC0328FAFD3900A2449B /* ConnectionError.swift in Sources */,
+				3FBAFBF828FAEF0300A2449B /* NetworkService.swift in Sources */,
+				3FBAFC0528FAFF4A00A2449B /* ContactQueriesListViewModel.swift in Sources */,
+				3FBAFBE328FAEBC300A2449B /* ContactListViewModelTests.swift in Sources */,
+				3FBAFBE128FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift in Sources */,
+				3FBAFBEB28FAEC1200A2449B /* NetworkSessionManagerMock.swift in Sources */,
+				3FBAFC0728FAFFA900A2449B /* UseCase.swift in Sources */,
+				3FBAFC0428FAFEE200A2449B /* ContactQueriesListItemViewModel.swift in Sources */,
+				3FBAFBFA28FAF2AA00A2449B /* ContactQuery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
