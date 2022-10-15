@@ -13,8 +13,8 @@ extension Contact {
                      lastName: String = "Brekke",
                      email: String? = "Crystel.Nicolas61@hotmail.com",
                      jobtitle: String = "Future Functionality Strategist",
-                     favouriteColor: String = "overview1",
-                     avatar: String = "pink",
+                     favouriteColor: String = "pink",
+                     avatar: String = "https://randomuser.me/api/portraits/women/IsaryAmairani_128.jpg",
                      createdAt: Date? = nil) -> Self {
         Contact(id: id,
                 firstName: firstName,
