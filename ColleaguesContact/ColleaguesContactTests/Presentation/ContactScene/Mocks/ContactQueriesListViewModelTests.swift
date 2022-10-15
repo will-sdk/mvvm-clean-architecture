@@ -5,31 +5,97 @@
 //  Created by Willy on 15/10/2022.
 //
 
+@testable import ColleaguesContact
 import XCTest
 
-final class ContactQueriesListViewModelTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class ContactQueriesListViewModelTests: XCTestCase {
+    
+    private enum FetchRecentQueriedUseCase: Error {
+        case someError
     }
+    
+    var contactQueries = [ContactQuery(query: "query1"),
+                        ContactQuery(query: "query2"),
+                        ContactQuery(query: "query3"),
+                        ContactQuery(query: "query4"),
+                        ContactQuery(query: "query5")]
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    class FetchRecentContactQueriesUseCaseMock: UseCase {
+        var expectation: XCTestExpectation?
+        var error: Error?
+        var contactQueries: [ContactQuery] = []
+        var completion: (Result<[ContactQuery], Error>) -> Void = { _ in }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        func start() -> Cancellable? {
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success(contactQueries))
+            }
+            expectation?.fulfill()
+            return nil
         }
     }
 
+    func makeFetchRecentContactQueriesUseCase(_ mock: FetchRecentContactQueriesUseCaseMock) -> FetchRecentContactQueriesUseCaseFactory {
+        return { _, completion in
+            mock.completion = completion
+            return mock
+        }
+    }
+    
+    
+    func test_whenFetchRecentContactQueriesUseCaseReturnsQueries_thenShowTheseQueries() {
+        // given
+        let useCase = FetchRecentContactQueriesUseCaseMock()
+        useCase.expectation = self.expectation(description: "Recent query fetched")
+        useCase.contactQueries = contactQueries
+        let viewModel = DefaultContactQueriesListViewModel(numberOfQueriesToShow: 3,
+                                                        fetchRecentContactQueriesUseCaseFactory: makeFetchRecentContactQueriesUseCase(useCase))
+
+        // when
+        viewModel.viewWillAppear()
+        
+        // then
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssertEqual(viewModel.items.value.map { $0.query }, contactQueries.map { $0.query })
+    }
+    
+    func test_whenFetchRecentContactQueriesUseCaseReturnsError_thenDontShowAnyQuery() {
+        // given
+        let useCase = FetchRecentContactQueriesUseCaseMock()
+        useCase.expectation = self.expectation(description: "Recent query fetched")
+        useCase.error = FetchRecentQueriedUseCase.someError
+        let viewModel = DefaultContactQueriesListViewModel(numberOfQueriesToShow: 3,
+                                                        fetchRecentContactQueriesUseCaseFactory: makeFetchRecentContactQueriesUseCase(useCase))
+        
+        // when
+        viewModel.viewWillAppear()
+        
+        // then
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssertTrue(viewModel.items.value.isEmpty)
+    }
+    
+    func test_whenDidSelectQueryEventIsReceived_thenCallDidSelectAction() {
+        // given
+        let selectedQueryItem = ContactQuery(query: "query1")
+        var actionContactQuery: ContactQuery?
+        let expectation = self.expectation(description: "Delegate notified")
+        let didSelect: ContactQueryListViewModelDidSelectAction = { contactQuery in
+            actionContactQuery = contactQuery
+            expectation.fulfill()
+        }
+        
+        let viewModel = DefaultContactQueriesListViewModel(numberOfQueriesToShow: 3,
+                                                        fetchRecentContactQueriesUseCaseFactory: makeFetchRecentContactQueriesUseCase(FetchRecentContactQueriesUseCaseMock()),
+                                                        didSelect: didSelect)
+        
+        // when
+        viewModel.didSelect(item: ContactQueryListItemViewModel(query: selectedQueryItem.query))
+        
+        // then
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssertEqual(actionContactQuery, selectedQueryItem)
+    }
 }

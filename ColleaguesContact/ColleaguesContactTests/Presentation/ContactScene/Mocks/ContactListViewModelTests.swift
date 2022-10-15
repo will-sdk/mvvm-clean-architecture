@@ -7,29 +7,74 @@
 
 import XCTest
 
-final class ContactListViewModelTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class ContactListViewModelTests: XCTestCase {
+    
+    private enum SearchContactUseCaseError: Error {
+        case someError
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    
+    let contact: ContactData = {
+        let contact1 = Contact.stub(id: "1",
+                                    firstName: "Maggie" ,
+                                    lastName: "Brekke",
+                                    email: "Crystel.Nicolas61@hotmail.com",
+                                    jobtitle: "Future Functionality Strategist",
+                                    favouriteColor: "pink",
+                                    avatar: "https://randomuser.me/api/portraits/women/IsaryAmairani_128.jpg"
+        )
+        let contact2 = Contact.stub(id: "2",
+                                    firstName: "Gunnar" ,
+                                    lastName: "Gibson",
+                                    email: "Paolo.Hudson@yahoo.com",
+                                    jobtitle: "Senior Directives Officer",
+                                    favouriteColor: "indigo",
+                                    avatar: "https://randomuser.me/api/portraits/women/4.jpg"
+        )
+        return ContactData.init(contact: [contact1, contact2])
+    }()
+    
+    class SearchContactUseCaseMock: SearchContactUseCase {
+        var expectation: XCTestExpectation?
+        var error: Error?
+        var contactData = ContactData(contact: [])
+        
+        func execute(requestValue: SearchContactUseCaseRequestValue,
+                     completion: @escaping (Result<ContactData, Error>) -> Void) -> Cancellable? {
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success(contactData))
+            }
+            expectation?.fulfill()
+            return nil
         }
     }
-
+    
+    func test_searchQueryViewModelContains() {
+        // given
+        let searchContactUseCaseMock = SearchContactUseCaseMock()
+        searchContactUseCaseMock.contactData = ContactData(contact: contact.contact)
+        let viewModel = DefaultContactListViewModel(searchContactUseCase: searchContactUseCaseMock)
+        // when
+        viewModel.didSearch(query: "search query")
+        
+        // then
+        XCTAssertEqual(viewModel.searchTitle, "search query")
+    }
+    
+    func test_whenSearchContactUseCaseReturnsError_thenViewModelContainsError() {
+        // given
+        let searchContactUseCaseMock = SearchContactUseCaseMock()
+        searchContactUseCaseMock.expectation = self.expectation(description: "contain errors")
+        searchContactUseCaseMock.error = SearchContactUseCaseError.someError
+        let viewModel = DefaultContactListViewModel(searchContactUseCase: searchContactUseCaseMock)
+        // when
+        viewModel.didSearch(query: "query")
+        
+        // then
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssertNotNil(viewModel.error)
+    }
+    
 }
