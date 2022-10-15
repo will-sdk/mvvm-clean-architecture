@@ -34,6 +34,20 @@
 		3FBAFB6228FA198900A2449B /* FetchRecentContactQueriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6028FA198900A2449B /* FetchRecentContactQueriesUseCase.swift */; };
 		3FBAFB6628FA19EB00A2449B /* ContactQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6428FA19EB00A2449B /* ContactQuery.swift */; };
 		3FBAFB6728FA19EB00A2449B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6528FA19EB00A2449B /* Contact.swift */; };
+		3FBAFB8028FAE6F800A2449B /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6A28FAE6F800A2449B /* APIEndpoints.swift */; };
+		3FBAFB8128FAE6F800A2449B /* ContactRequest+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6C28FAE6F800A2449B /* ContactRequest+Mapping.swift */; };
+		3FBAFB8228FAE6F800A2449B /* ContactResponse+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6D28FAE6F800A2449B /* ContactResponse+Mapping.swift */; };
+		3FBAFB8328FAE6F800A2449B /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB6F28FAE6F800A2449B /* RepositoryTask.swift */; };
+		3FBAFB8428FAE6F800A2449B /* DefaultContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB7128FAE6F800A2449B /* DefaultContactRepository.swift */; };
+		3FBAFB8528FAE6F800A2449B /* DefaultContactQueriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB7228FAE6F800A2449B /* DefaultContactQueriesRepository.swift */; };
+		3FBAFB8628FAE6F800A2449B /* ContactQueriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB7528FAE6F800A2449B /* ContactQueriesStorage.swift */; };
+		3FBAFB8728FAE6F800A2449B /* ContactQueryUDS+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB7628FAE6F800A2449B /* ContactQueryUDS+Mapping.swift */; };
+		3FBAFB8828FAE6F800A2449B /* ContactQueryEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB7728FAE6F800A2449B /* ContactQueryEntity+Mapping.swift */; };
+		3FBAFB8928FAE6F800A2449B /* UserDefaultsContactQueriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB7828FAE6F800A2449B /* UserDefaultsContactQueriesStorage.swift */; };
+		3FBAFB8A28FAE6F800A2449B /* CoreDataContactQueriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB7928FAE6F800A2449B /* CoreDataContactQueriesStorage.swift */; };
+		3FBAFB8B28FAE6F800A2449B /* ContactResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB7B28FAE6F800A2449B /* ContactResponseStorage.swift */; };
+		3FBAFB8C28FAE6F800A2449B /* CoreDataStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB7D28FAE6F800A2449B /* CoreDataStorage.xcdatamodeld */; };
+		3FBAFB8D28FAE6F800A2449B /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFB7F28FAE6F800A2449B /* CoreDataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +99,20 @@
 		3FBAFB6028FA198900A2449B /* FetchRecentContactQueriesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchRecentContactQueriesUseCase.swift; sourceTree = "<group>"; };
 		3FBAFB6428FA19EB00A2449B /* ContactQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactQuery.swift; sourceTree = "<group>"; };
 		3FBAFB6528FA19EB00A2449B /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		3FBAFB6A28FAE6F800A2449B /* APIEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		3FBAFB6C28FAE6F800A2449B /* ContactRequest+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactRequest+Mapping.swift"; sourceTree = "<group>"; };
+		3FBAFB6D28FAE6F800A2449B /* ContactResponse+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactResponse+Mapping.swift"; sourceTree = "<group>"; };
+		3FBAFB6F28FAE6F800A2449B /* RepositoryTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTask.swift; sourceTree = "<group>"; };
+		3FBAFB7128FAE6F800A2449B /* DefaultContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultContactRepository.swift; sourceTree = "<group>"; };
+		3FBAFB7228FAE6F800A2449B /* DefaultContactQueriesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultContactQueriesRepository.swift; sourceTree = "<group>"; };
+		3FBAFB7528FAE6F800A2449B /* ContactQueriesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactQueriesStorage.swift; sourceTree = "<group>"; };
+		3FBAFB7628FAE6F800A2449B /* ContactQueryUDS+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactQueryUDS+Mapping.swift"; sourceTree = "<group>"; };
+		3FBAFB7728FAE6F800A2449B /* ContactQueryEntity+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactQueryEntity+Mapping.swift"; sourceTree = "<group>"; };
+		3FBAFB7828FAE6F800A2449B /* UserDefaultsContactQueriesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsContactQueriesStorage.swift; sourceTree = "<group>"; };
+		3FBAFB7928FAE6F800A2449B /* CoreDataContactQueriesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContactQueriesStorage.swift; sourceTree = "<group>"; };
+		3FBAFB7B28FAE6F800A2449B /* ContactResponseStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactResponseStorage.swift; sourceTree = "<group>"; };
+		3FBAFB7E28FAE6F800A2449B /* CoreDataStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataStorage.xcdatamodel; sourceTree = "<group>"; };
+		3FBAFB7F28FAE6F800A2449B /* CoreDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +163,7 @@
 		3FBAFB0628FA15D700A2449B /* ColleaguesContact */ = {
 			isa = PBXGroup;
 			children = (
+				3FBAFB6828FAE6F800A2449B /* Data */,
 				3FBAFB5228FA190100A2449B /* Domain */,
 				3FBAFB4828FA189E00A2449B /* Infrastructure */,
 				3FBAFB4328FA185600A2449B /* Common */,
@@ -269,6 +298,91 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		3FBAFB6828FAE6F800A2449B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB6928FAE6F800A2449B /* Network */,
+				3FBAFB6E28FAE6F800A2449B /* Utils */,
+				3FBAFB7028FAE6F800A2449B /* Repositories */,
+				3FBAFB7328FAE6F800A2449B /* PersistentStorages */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3FBAFB6928FAE6F800A2449B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB6A28FAE6F800A2449B /* APIEndpoints.swift */,
+				3FBAFB6B28FAE6F800A2449B /* DataMapping */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3FBAFB6B28FAE6F800A2449B /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB6C28FAE6F800A2449B /* ContactRequest+Mapping.swift */,
+				3FBAFB6D28FAE6F800A2449B /* ContactResponse+Mapping.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		3FBAFB6E28FAE6F800A2449B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB6F28FAE6F800A2449B /* RepositoryTask.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3FBAFB7028FAE6F800A2449B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB7128FAE6F800A2449B /* DefaultContactRepository.swift */,
+				3FBAFB7228FAE6F800A2449B /* DefaultContactQueriesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3FBAFB7328FAE6F800A2449B /* PersistentStorages */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB7428FAE6F800A2449B /* ContactQueriesStorage */,
+				3FBAFB7A28FAE6F800A2449B /* ContactResponseStorage */,
+				3FBAFB7C28FAE6F800A2449B /* CoreDataStorage */,
+			);
+			path = PersistentStorages;
+			sourceTree = "<group>";
+		};
+		3FBAFB7428FAE6F800A2449B /* ContactQueriesStorage */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB7528FAE6F800A2449B /* ContactQueriesStorage.swift */,
+				3FBAFB7628FAE6F800A2449B /* ContactQueryUDS+Mapping.swift */,
+				3FBAFB7728FAE6F800A2449B /* ContactQueryEntity+Mapping.swift */,
+				3FBAFB7828FAE6F800A2449B /* UserDefaultsContactQueriesStorage.swift */,
+				3FBAFB7928FAE6F800A2449B /* CoreDataContactQueriesStorage.swift */,
+			);
+			path = ContactQueriesStorage;
+			sourceTree = "<group>";
+		};
+		3FBAFB7A28FAE6F800A2449B /* ContactResponseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB7B28FAE6F800A2449B /* ContactResponseStorage.swift */,
+			);
+			path = ContactResponseStorage;
+			sourceTree = "<group>";
+		};
+		3FBAFB7C28FAE6F800A2449B /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFB7D28FAE6F800A2449B /* CoreDataStorage.xcdatamodeld */,
+				3FBAFB7F28FAE6F800A2449B /* CoreDataStorage.swift */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -400,24 +514,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBAFB8A28FAE6F800A2449B /* CoreDataContactQueriesStorage.swift in Sources */,
 				3FBAFB4228FA17FC00A2449B /* AppDIContainer.swift in Sources */,
 				3FBAFB4F28FA18B100A2449B /* NetworkConfig.swift in Sources */,
+				3FBAFB8228FAE6F800A2449B /* ContactResponse+Mapping.swift in Sources */,
+				3FBAFB8928FAE6F800A2449B /* UserDefaultsContactQueriesStorage.swift in Sources */,
+				3FBAFB8D28FAE6F800A2449B /* CoreDataStorage.swift in Sources */,
 				3FBAFB3B28FA178400A2449B /* AppAppearance.swift in Sources */,
+				3FBAFB8028FAE6F800A2449B /* APIEndpoints.swift in Sources */,
 				3FBAFB6228FA198900A2449B /* FetchRecentContactQueriesUseCase.swift in Sources */,
 				3FBAFB5928FA191F00A2449B /* ContactQueriesRepository.swift in Sources */,
 				3FBAFB6128FA198900A2449B /* SearchContactUseCase.swift in Sources */,
 				3FBAFB6728FA19EB00A2449B /* Contact.swift in Sources */,
+				3FBAFB8628FAE6F800A2449B /* ContactQueriesStorage.swift in Sources */,
 				3FBAFB5128FA18B100A2449B /* Endpoint.swift in Sources */,
+				3FBAFB8128FAE6F800A2449B /* ContactRequest+Mapping.swift in Sources */,
+				3FBAFB8828FAE6F800A2449B /* ContactQueryEntity+Mapping.swift in Sources */,
 				3FBAFB6628FA19EB00A2449B /* ContactQuery.swift in Sources */,
 				3FBAFB4628FA186200A2449B /* ConnectionError.swift in Sources */,
 				3FBAFB0828FA15D700A2449B /* AppDelegate.swift in Sources */,
+				3FBAFB8428FAE6F800A2449B /* DefaultContactRepository.swift in Sources */,
+				3FBAFB8728FAE6F800A2449B /* ContactQueryUDS+Mapping.swift in Sources */,
 				3FBAFB5E28FA197D00A2449B /* UseCase.swift in Sources */,
 				3FBAFB4E28FA18B100A2449B /* DataTransferService.swift in Sources */,
 				3FBAFB3D28FA178400A2449B /* AppFlowCoordinator.swift in Sources */,
 				3FBAFB3C28FA178400A2449B /* AppConfigurations.swift in Sources */,
+				3FBAFB8528FAE6F800A2449B /* DefaultContactQueriesRepository.swift in Sources */,
 				3FBAFB5A28FA191F00A2449B /* PosterImagesRepository.swift in Sources */,
 				3FBAFB4128FA17FC00A2449B /* ContactSceneDIContainer.swift in Sources */,
+				3FBAFB8B28FAE6F800A2449B /* ContactResponseStorage.swift in Sources */,
+				3FBAFB8C28FAE6F800A2449B /* CoreDataStorage.xcdatamodeld in Sources */,
 				3FBAFB4728FA186200A2449B /* Cancelable.swift in Sources */,
+				3FBAFB8328FAE6F800A2449B /* RepositoryTask.swift in Sources */,
 				3FBAFB5028FA18B100A2449B /* NetworkService.swift in Sources */,
 				3FBAFB5828FA191F00A2449B /* ContactRepository.swift in Sources */,
 				3FBAFB0A28FA15D700A2449B /* SceneDelegate.swift in Sources */,
@@ -756,6 +884,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FBAFB7D28FAE6F800A2449B /* CoreDataStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FBAFB7E28FAE6F800A2449B /* CoreDataStorage.xcdatamodel */,
+			);
+			currentVersion = 3FBAFB7E28FAE6F800A2449B /* CoreDataStorage.xcdatamodel */;
+			path = CoreDataStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3FBAFAFC28FA15D700A2449B /* Project object */;
 }
