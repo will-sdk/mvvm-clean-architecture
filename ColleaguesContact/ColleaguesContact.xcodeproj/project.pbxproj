@@ -76,6 +76,15 @@
 		3FBAFBD628FAE77200A2449B /* BlackStyleNavigationBarBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBB928FAE77200A2449B /* BlackStyleNavigationBarBehavior.swift */; };
 		3FBAFBD728FAE77200A2449B /* BackButtonEmptyTitleNavigationBarBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBBA28FAE77200A2449B /* BackButtonEmptyTitleNavigationBarBehavior.swift */; };
 		3FBAFBD828FAE77200A2449B /* ContactSearchFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBBC28FAE77200A2449B /* ContactSearchFlowCoordinator.swift */; };
+		3FBAFBDC28FAEA4200A2449B /* SearchContactUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBDB28FAEA4200A2449B /* SearchContactUseCaseTests.swift */; };
+		3FBAFBE128FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBE028FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift */; };
+		3FBAFBE328FAEBC300A2449B /* ContactListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBE228FAEBC300A2449B /* ContactListViewModelTests.swift */; };
+		3FBAFBE528FAEBD500A2449B /* ContactDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBE428FAEBD500A2449B /* ContactDetailsViewModelTests.swift */; };
+		3FBAFBEB28FAEC1200A2449B /* NetworkSessionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBE928FAEC1200A2449B /* NetworkSessionManagerMock.swift */; };
+		3FBAFBEC28FAEC1200A2449B /* NetworkConfigurableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBEA28FAEC1200A2449B /* NetworkConfigurableMock.swift */; };
+		3FBAFBEE28FAEC2700A2449B /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBED28FAEC2700A2449B /* NetworkServiceTests.swift */; };
+		3FBAFBF028FAEC3800A2449B /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBEF28FAEC3800A2449B /* DataTransferServiceTests.swift */; };
+		3FBAFBF328FAEC6200A2449B /* Contact+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBAFBF228FAEC6200A2449B /* Contact+Stub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +178,15 @@
 		3FBAFBB928FAE77200A2449B /* BlackStyleNavigationBarBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackStyleNavigationBarBehavior.swift; sourceTree = "<group>"; };
 		3FBAFBBA28FAE77200A2449B /* BackButtonEmptyTitleNavigationBarBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonEmptyTitleNavigationBarBehavior.swift; sourceTree = "<group>"; };
 		3FBAFBBC28FAE77200A2449B /* ContactSearchFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactSearchFlowCoordinator.swift; sourceTree = "<group>"; };
+		3FBAFBDB28FAEA4200A2449B /* SearchContactUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContactUseCaseTests.swift; sourceTree = "<group>"; };
+		3FBAFBE028FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactQueriesListViewModelTests.swift; sourceTree = "<group>"; };
+		3FBAFBE228FAEBC300A2449B /* ContactListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModelTests.swift; sourceTree = "<group>"; };
+		3FBAFBE428FAEBD500A2449B /* ContactDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		3FBAFBE928FAEC1200A2449B /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
+		3FBAFBEA28FAEC1200A2449B /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
+		3FBAFBED28FAEC2700A2449B /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		3FBAFBEF28FAEC3800A2449B /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
+		3FBAFBF228FAEC6200A2449B /* Contact+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+Stub.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +254,10 @@
 		3FBAFB1D28FA15D900A2449B /* ColleaguesContactTests */ = {
 			isa = PBXGroup;
 			children = (
+				3FBAFBF128FAEC4000A2449B /* Mocks */,
+				3FBAFBE628FAEBED00A2449B /* Infrastructure */,
+				3FBAFBDD28FAEA5800A2449B /* Presentation */,
+				3FBAFBD928FAEA0F00A2449B /* Domain */,
 				3FBAFB1E28FA15D900A2449B /* ColleaguesContactTests.swift */,
 			);
 			path = ColleaguesContactTests;
@@ -619,6 +641,83 @@
 			path = Flows;
 			sourceTree = "<group>";
 		};
+		3FBAFBD928FAEA0F00A2449B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBDA28FAEA1700A2449B /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3FBAFBDA28FAEA1700A2449B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBDB28FAEA4200A2449B /* SearchContactUseCaseTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3FBAFBDD28FAEA5800A2449B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBDE28FAEB7E00A2449B /* ContactScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3FBAFBDE28FAEB7E00A2449B /* ContactScene */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBDF28FAEB8700A2449B /* Mocks */,
+			);
+			path = ContactScene;
+			sourceTree = "<group>";
+		};
+		3FBAFBDF28FAEB8700A2449B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBE028FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift */,
+				3FBAFBE228FAEBC300A2449B /* ContactListViewModelTests.swift */,
+				3FBAFBE428FAEBD500A2449B /* ContactDetailsViewModelTests.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3FBAFBE628FAEBED00A2449B /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBE728FAEBF600A2449B /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3FBAFBE728FAEBF600A2449B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBE828FAEBFD00A2449B /* Mocks */,
+				3FBAFBED28FAEC2700A2449B /* NetworkServiceTests.swift */,
+				3FBAFBEF28FAEC3800A2449B /* DataTransferServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3FBAFBE828FAEBFD00A2449B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBEA28FAEC1200A2449B /* NetworkConfigurableMock.swift */,
+				3FBAFBE928FAEC1200A2449B /* NetworkSessionManagerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3FBAFBF128FAEC4000A2449B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3FBAFBF228FAEC6200A2449B /* Contact+Stub.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -820,7 +919,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBAFBF328FAEC6200A2449B /* Contact+Stub.swift in Sources */,
+				3FBAFBEC28FAEC1200A2449B /* NetworkConfigurableMock.swift in Sources */,
+				3FBAFBDC28FAEA4200A2449B /* SearchContactUseCaseTests.swift in Sources */,
+				3FBAFBF028FAEC3800A2449B /* DataTransferServiceTests.swift in Sources */,
+				3FBAFBEE28FAEC2700A2449B /* NetworkServiceTests.swift in Sources */,
+				3FBAFBE528FAEBD500A2449B /* ContactDetailsViewModelTests.swift in Sources */,
+				3FBAFBE328FAEBC300A2449B /* ContactListViewModelTests.swift in Sources */,
 				3FBAFB1F28FA15D900A2449B /* ColleaguesContactTests.swift in Sources */,
+				3FBAFBE128FAEBAA00A2449B /* ContactQueriesListViewModelTests.swift in Sources */,
+				3FBAFBEB28FAEC1200A2449B /* NetworkSessionManagerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
