@@ -21,5 +21,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>ImageBaseURL</key>
+	<string>$(IMAGE_BASE_URL)</string>
+	<key>ApiKey</key>
+	<string>$(API_KEY)</string>
+	<key>ApiBaseURL</key>
+	<string>$(API_BASE_URL)</string>
 </dict>
 </plist>
