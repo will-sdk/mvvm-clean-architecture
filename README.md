@@ -1,5 +1,5 @@
 
-## Project Colleagues Contact
+## MVVM with Clean Architecture
 
 ###### Feature
 > Contact List
