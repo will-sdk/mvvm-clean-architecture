@@ -19,5 +19,3 @@
 | Unit test |
 | ------------- |
 |<img width="1116" alt="Screenshot 2022-10-15 at 15 49 16" src="https://user-images.githubusercontent.com/75713253/195998642-0b4133ca-56ab-4050-8e74-9fd31f8b9070.png">|
-
-Many Thanks
